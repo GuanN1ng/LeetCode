@@ -14,6 +14,17 @@ public class MostWaterCan {
      * int[] 下标 x轴   数值 y轴
      *
      * 双指针
+     * 左（x1,y1） 右 (x2,y2)
+     * area = min(y1,y2)*(x2-x1)
+     * 设  y1<y2  area = y1*(x2-x1)
+     * 则无论右边界如何向左移动，则面积始终小于当前值
+     * 若 y3>y2
+     *
+     * area = min(y1,y3)*(x3-x1) = y1*(x3-x1) < y1*(x2-x1)
+     *
+     * 若 y3<=y2  ...
+     *
+     *
      *
      *
      *
