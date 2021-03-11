@@ -1,4 +1,4 @@
-package com.guann1n9.leetcode.algorithm;
+package com.guann1n9.leetcode.problems;
 
 /**
  * 给你一个 32 位的有符号整数 x ，返回 x 中每位上的数字反转后的结果。

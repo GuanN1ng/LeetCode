@@ -1,4 +1,4 @@
-package com.guann1n9.leetcode.algorithm;
+package com.guann1n9.leetcode.problems;
 
 /**
  * 给你一个字符串 s，找到 s 中最长的回文子串。

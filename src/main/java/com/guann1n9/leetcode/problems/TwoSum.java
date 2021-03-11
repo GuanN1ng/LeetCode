@@ -1,4 +1,4 @@
-package com.guann1n9.leetcode.algorithm;
+package com.guann1n9.leetcode.problems;
 
 import java.util.HashMap;
 

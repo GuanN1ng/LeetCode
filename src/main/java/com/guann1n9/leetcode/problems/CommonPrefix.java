@@ -1,4 +1,4 @@
-package com.guann1n9.leetcode.algorithm;
+package com.guann1n9.leetcode.problems;
 
 /**
  *最长公众前缀

@@ -1,4 +1,4 @@
-package com.guann1n9.leetcode.algorithm;
+package com.guann1n9.leetcode.problems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,6 @@ import java.util.List;
  * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如："PAHNAPLSIIGYIR"。
  */
 public class ZConvert {
-
 
 
     public String convert(String s, int numRows) {
