@@ -1,5 +1,7 @@
-package com.guann1n9.leetcode.problems;
+package com.guann1n9.leetcode.problems.backtrack;
 
+
+import com.alibaba.fastjson.JSON;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,16 +58,39 @@ public class Subsets {
     }
 
 
-    public static void main(String[] args) {
 
-        for (int mask = 0;mask < (1 << 3); ++mask){
-            //Java中i++语句是需要一个临时变量取存储返回自增前的值，而++i不需要
-            for (int i = 0; i < 3; ++i) {
-                int idx = mask & (1 << i);
-                System.out.println(idx);
-            }
-            System.out.println("----");
+    static List<List<Integer>> res =  new ArrayList<>();
+
+    /**
+     * 回溯算法
+     * @param nums
+     * @return
+     */
+    public static List<List<Integer>> subsets2(int[] nums) {
+        backtrack(0,nums,new ArrayList<Integer>());
+        return res;
+    }
+
+
+    public static void backtrack(int idx,int[] nums,List<Integer> list){
+        res.add(new ArrayList<>(list));
+        if(idx == nums.length){
+            return;
         }
+        for (int i = idx; i < nums.length; i++) {
+            list.add(nums[i]);
+            backtrack(i+1,nums,list);
+            list.remove(list.size()-1);
+        }
+    }
+
+
+
+
+
+    public static void main(String[] args) {
+        int[] a = {1,2,3};
+        System.out.println(JSON.toJSONString(subsets2(a)));
 
     }
 }

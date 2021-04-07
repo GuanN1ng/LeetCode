@@ -1,4 +1,4 @@
-package com.guann1n9.leetcode.problems;
+package com.guann1n9.leetcode.problems.backtrack;
 
 import com.alibaba.fastjson.JSON;
 
