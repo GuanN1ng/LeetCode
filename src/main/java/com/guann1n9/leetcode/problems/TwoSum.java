@@ -1,5 +1,6 @@
 package com.guann1n9.leetcode.problems;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -18,6 +19,24 @@ public class TwoSum {
                 return new int[]{i,map.get(diff)};
             }
             map.put(nums[i],i);
+        }
+        return new int[0];
+    }
+
+
+    //变化 ，若有序 选择左右指针
+    public int[] twoSum2(int[] nums, int target){
+        int left = 0,right = nums.length-1;
+        while (left < right){
+            int sum = nums[left] + nums[right];
+            if(sum == target){
+                return new int[]{left,right};
+            }
+            if(sum > target){
+                right--;
+            }else {
+                left ++;
+            }
         }
         return new int[0];
     }
