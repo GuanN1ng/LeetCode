@@ -72,4 +72,34 @@ public class ReserveListNodeII {
         head.next.next = head;
         head.next = null;
     }
+
+
+    /**
+     * 头插法
+     *
+     * https://leetcode-cn.com/problems/reverse-linked-list-ii/solution/java-shuang-zhi-zhen-tou-cha-fa-by-mu-yi-cheng-zho/
+     * @param head
+     * @param left
+     * @param right
+     * @return
+     */
+    public ListNode reverseBetween2(ListNode head, int left, int right) {
+        ListNode dummy = new ListNode(0, head);
+        ListNode pre = dummy;
+        ListNode curr;
+        for (int i = 0; i < left - 1; i++) {
+            pre = pre.next;
+        }
+        curr =pre.next;
+        for (int i = 0; i < right - left; i++) {
+            ListNode temp = curr.next;
+            //头插法 注意指针操作顺序
+            curr.next =temp.next;
+            temp.next = pre.next; // curr指针在变化
+            pre.next = temp;
+        }
+        return dummy.next;
+
+
+    }
 }
