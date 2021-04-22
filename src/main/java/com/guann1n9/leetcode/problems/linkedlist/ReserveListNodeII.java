@@ -1,5 +1,10 @@
 package com.guann1n9.leetcode.problems.linkedlist;
 
+import com.alibaba.fastjson.JSON;
+
+import java.io.*;
+import java.util.HashMap;
+
 /**
  * 反转链表2
  *
@@ -99,7 +104,5 @@ public class ReserveListNodeII {
             pre.next = temp;
         }
         return dummy.next;
-
-
     }
 }
