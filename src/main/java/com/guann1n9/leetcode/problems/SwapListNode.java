@@ -69,7 +69,7 @@ public class SwapListNode {
         //继续递归，处理节点3->4
         //当递归结束返回后，就变成了4->3
         //于是head节点就指向了4，变成1->4->3
-        head.next = swapPairs(tmp.next);
+        head.next = swapPairs2(tmp.next);
         //将2节点指向1
         tmp.next = head;
         return tmp;
