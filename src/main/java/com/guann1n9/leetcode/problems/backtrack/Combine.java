@@ -1,6 +1,5 @@
 package com.guann1n9.leetcode.problems.backtrack;
 
-import com.alibaba.fastjson.JSON;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +40,6 @@ public class Combine {
 
 
     public static void main(String[] args) {
-        combine(5,3);
+
     }
 }
