@@ -1,8 +1,5 @@
 package com.guann1n9.leetcode.problems.backtrack;
 
-import com.alibaba.fastjson.JSON;
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,20 +43,6 @@ public class RestoreIp {
             builder = new StringBuilder(temp);
             --count;
         }
-
-    }
-
-
-    public static void main(String[] args) {
-
-        String a = "25525511135";
-
-        String b = "123";
-
-
-        System.out.println(b.substring(3));
-
-        System.out.println(JSON.toJSONString(restoreIpAddresses(a)));
 
     }
 }
